@@ -25,4 +25,4 @@
 	property="og:image"
 	content="https://cdn.discordapp.com/avatars/292821168833036288/3284fe8baadfec0fa38834643ff8a8f5.png"
 /> -->
-<meta content="#06B6D4" data-react-helmet="true" name="theme-color" />
+<meta content="#AD0302" data-react-helmet="true" name="theme-color" />
