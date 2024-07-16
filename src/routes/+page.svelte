@@ -57,7 +57,7 @@
 					<Icon icon="carbon:location" />
 					<p>Winchester, VA</p>
 				</div>
-    <div class="flex flex-row items-center justify-end space-x-1">
+				<div class="flex flex-row items-center justify-end space-x-1">
 					<Icon icon="carbon:email" />
 					<p>dandzmotorsports@gmail.com</p>
 				</div>
