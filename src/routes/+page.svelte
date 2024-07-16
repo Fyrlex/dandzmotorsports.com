@@ -57,6 +57,10 @@
 					<Icon icon="carbon:location" />
 					<p>Winchester, VA</p>
 				</div>
+    <div class="flex flex-row items-center justify-end space-x-1">
+					<Icon icon="carbon:email" />
+					<p>dandzmotorsports@gmail.com</p>
+				</div>
 				<div class="flex flex-row items-center justify-end space-x-1">
 					<Icon icon="carbon:phone" />
 					<p>(540) 315-4562</p>
