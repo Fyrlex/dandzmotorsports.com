@@ -1,9 +1,14 @@
-<script>
+<script lang="ts">
 	import '../app.css';
+	import Transition from '../components/transition.svelte';
+
+	export let data;
 </script>
 
-<div>
-	<main>
-		<slot />
-	</main>
-</div>
+<Transition {data}>
+	<div class="flex flex-col h-screen">
+		<main>
+			<slot />
+		</main>
+	</div>
+</Transition>
