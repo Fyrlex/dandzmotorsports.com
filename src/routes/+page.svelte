@@ -1,21 +1,24 @@
 <script>
 	import Meta from '../components/meta.svelte';
 	import Icon from '@iconify/svelte';
+	import Logo from '$lib/assets/largelogo.png';
 </script>
 
 <svelte:head>
 	<Meta data={{ title: 'Home', url: '' }} />
 </svelte:head>
 
-<div class="container mx-auto m-8 text-gray-200 font-serif">
-	<h1 class="text-5xl text-center">D & Z Motorsports</h1>
-	<div class="flex flex-col lg:flex-row m-5 space-x-6">
-		<div class="hidden lg:contents m-5 lg:m-0 lg:w-1/4 order-3">
+<nav class="bg-black">
+	<img src={Logo} width="500" alt="D & Z Motorsports Logo" class="mx-auto" />
+</nav>
+<div class="container mx-auto my-8 text-gray-200 font-serif">
+	<div class="flex flex-col lg:flex-row my-5 space-x-6">
+		<div class="hidden lg:flex p-5 lg:w-1/4">
 			<iframe
 				class="rounded-sm"
 				title="Facebook Page"
-				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F100090799030040&tabs=timeline&width=300&height=800&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
-				width="300"
+				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F100090799030040&tabs=timeline&width=320&height=800&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+				width="320"
 				height="800"
 				style="border:none;overflow:hidden"
 				scrolling="no"
@@ -24,7 +27,7 @@
 				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
 			></iframe>
 		</div>
-		<div class="order-3 m-5 lg:m-0 lg:hidden flex mx-auto">
+		<div class="order-3 p-5 lg:hidden flex mx-auto">
 			<iframe
 				class="rounded-sm"
 				title="Facebook Page"
@@ -38,35 +41,48 @@
 				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
 			></iframe>
 		</div>
-		<div class="lg:w-1/2 text-center order-1">
-			Sample Text: A full-service automotive repair shop located in the heart of the Midwest. We
-			service and repair all makes and models of vehicles. We are a family-owned and operated
-			business that has been serving the community for over 20 years. Our team of experienced
-			technicians is dedicated to providing you with the highest quality service at an affordable
-			price. Whether you need routine maintenance or major repairs, we have the skills and expertise
-			to get the job done right. Contact us today to schedule an appointment!
+		<div class="lg:w-1/2 p-5 text-center order-1">
+			<h1 class="text-left text-4xl lg:text-7xl my-3">D & Z Motorsports</h1>
+			<p class="text-xl lg:text-3xl text-left indent-12">
+				In need of an auto repair or upgrade? At D & Z Motorsports, we are committed to providing a
+				fast and effective environment for automobiles and their needs.
+			</p>
 		</div>
-		<div class="lg:w-1/4 m-5 lg:m-0 flex flex-col space-y-10 order-2">
+		<div class="lg:w-1/4 p-5 flex flex-col space-y-10 order-2">
 			<div class="text-right">
-				<h2 class="text-3xl text-right">Latest News</h2>
-				<p>Our website has opened!</p>
+				<div class="flex flex-row items-center justify-end space-x-1 text-3xl">
+					<Icon icon="carbon:notification-new" />
+					<h2 class="text-right">Latest News</h2>
+				</div>
+				<p class="text-lg">Our website has opened!</p>
 			</div>
 			<div class="text-right">
-				<h2 class="text-3xl">Contact Us</h2>
+				<div class="flex flex-row items-center justify-end space-x-1 text-3xl">
+					<Icon icon="carbon:time" />
+					<h2 class="text-right">Hours</h2>
+				</div>
+				<p class="text-lg">Mon - Fri 9 AM to 6 PM</p>
+				<p class="text-lg">Closed on holidays</p>
+			</div>
+			<div class="text-right">
+				<div class="flex flex-row items-center justify-end space-x-1 text-3xl">
+					<Icon icon="carbon:question-answering" />
+					<h2 class="text-right">Contact Us</h2>
+				</div>
 				<div class="flex flex-row items-center justify-end space-x-1">
 					<Icon icon="carbon:location" />
 					<p>Winchester, VA</p>
 				</div>
 				<div class="flex flex-row items-center justify-end space-x-1">
 					<Icon icon="carbon:email" />
-					<p>dandzmotorsports@gmail.com</p>
+					<a href="mailto:dandzmotorsports@gmail.com">dandzmotorsports@gmail.com</a>
 				</div>
 				<div class="flex flex-row items-center justify-end space-x-1">
 					<Icon icon="carbon:phone" />
 					<p>(540) 315-4562</p>
 				</div>
+				<p>*Appointment by call</p>
 			</div>
 		</div>
 	</div>
 </div>
-<footer class="text-gray-500 text-center">Made by Jaren G. and Elyaas R.</footer>
