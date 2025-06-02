@@ -1,17 +1,16 @@
 <script lang="ts">
-	import '../app.css';
-	import Transition from '../components/transition.svelte';
+  import '../app.css';
+  import Logo from '$lib/assets/largelogo.png';
 
-	export let data;
+  let { children } = $props();
 </script>
 
-<Transition {data}>
-	<div class="flex flex-col h-screen">
-		<main class="flex-grow">
-			<slot />
-		</main>
-		<footer class="h-auto text-center text-gray-200 py-5">
-			© D & Z Motorsports 2024 - All rights reserved
-		</footer>
-	</div>
-</Transition>
+<div class="flex min-h-screen flex-col">
+  <nav class="bg-black">
+    <img src={Logo} width="500" alt="D & Z Motorsports Logo" class="mx-auto" />
+  </nav>
+  {@render children()}
+  <footer class="h-auto py-5 text-center text-gray-200">
+    © D & Z Motorsports 2024 - All rights reserved
+  </footer>
+</div>
