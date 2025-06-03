@@ -1,10 +1,9 @@
 <script>
   import Metadata from '../components/Metadata.svelte';
   import Icon from '@iconify/svelte';
-  import Logo from '$lib/assets/largelogo.png';
 </script>
 
-<Metadata title={'Home'} url={''} />
+<Metadata title="Home" url="" />
 
 <div class="container mx-auto my-8 font-serif text-gray-200">
   <div class="my-5 flex flex-col space-x-6 lg:flex-row">

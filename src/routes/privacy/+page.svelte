@@ -2,7 +2,7 @@
   import Metadata from '../../components/Metadata.svelte';
 </script>
 
-<Metadata title={'Privacy Policy'} url={'/privacy'} />
+<Metadata title="Privacy Policy" url="/privacy" />
 
 <div class="container mx-auto my-10 space-y-5 text-gray-200">
   <h1 class="text-5xl">Privacy Policy</h1>
