@@ -5,7 +5,7 @@
 
 <Metadata title="Home" url="" />
 
-<div class="container mx-auto my-8 font-serif text-gray-200">
+<div class="container mx-auto my-8 text-gray-200">
   <div class="my-5 flex flex-col space-x-6 lg:flex-row">
     <div class="hidden p-5 lg:flex lg:w-1/4">
       <iframe
