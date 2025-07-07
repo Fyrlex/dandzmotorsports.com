@@ -1,11 +1,12 @@
 <script>
-  import Metadata from '../components/Metadata.svelte';
-  import Icon from '@iconify/svelte';
+  import Metadata from '../lib/components/Metadata.svelte';
+  import RightSidebar from '../lib/components/RightSidebar.svelte';
+  import Slideshow from '../lib/components/Slideshow.svelte';
 </script>
 
-<Metadata title="Home" url="" />
+<Metadata title="Autoshop" url="" />
 
-<div class="container mx-auto my-8 text-gray-200">
+<div class="container mx-auto my-8">
   <div class="my-5 flex flex-col space-x-6 lg:flex-row">
     <div class="hidden p-5 lg:flex lg:w-1/4">
       <iframe
@@ -35,48 +36,16 @@
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
       ></iframe>
     </div>
-    <div class="order-1 p-5 text-center lg:w-1/2">
+    <div class="order-1 space-y-10 p-5 text-center lg:w-1/2">
       <h1 class="my-3 text-left text-4xl lg:text-7xl">D & Z Motorsports</h1>
-      <p class="text-left indent-12 text-xl lg:text-3xl">
+      <h2 class="text-left indent-12 text-xl lg:text-3xl">
         In need of an auto repair or upgrade? At D & Z Motorsports, we are committed to providing a
         fast and effective environment for automobiles and their needs.
-      </p>
+      </h2>
+      <Slideshow />
     </div>
     <div class="order-2 flex flex-col space-y-10 p-5 lg:w-1/4">
-      <div class="text-right">
-        <div class="flex flex-row items-center justify-end space-x-1 text-3xl">
-          <Icon icon="carbon:notification-new" />
-          <h2 class="text-right">Latest News</h2>
-        </div>
-        <p class="text-lg">Our website has opened!</p>
-      </div>
-      <div class="text-right">
-        <div class="flex flex-row items-center justify-end space-x-1 text-3xl">
-          <Icon icon="carbon:time" />
-          <h2 class="text-right">Hours</h2>
-        </div>
-        <p class="text-lg">Mon - Fri 9 AM to 6 PM</p>
-        <p class="text-lg">Closed on holidays</p>
-      </div>
-      <div class="text-right">
-        <div class="flex flex-row items-center justify-end space-x-1 text-3xl">
-          <Icon icon="carbon:question-answering" />
-          <h2 class="text-right">Contact Us</h2>
-        </div>
-        <div class="flex flex-row items-center justify-end space-x-1">
-          <Icon icon="carbon:location" />
-          <p>Winchester, VA</p>
-        </div>
-        <div class="flex flex-row items-center justify-end space-x-1">
-          <Icon icon="carbon:email" />
-          <a href="mailto:dandzmotorsports@gmail.com">dandzmotorsports@gmail.com</a>
-        </div>
-        <div class="flex flex-row items-center justify-end space-x-1">
-          <Icon icon="carbon:phone" />
-          <p>(540) 315-4562</p>
-        </div>
-        <p>*Appointment by call</p>
-      </div>
+      <RightSidebar />
     </div>
   </div>
 </div>
