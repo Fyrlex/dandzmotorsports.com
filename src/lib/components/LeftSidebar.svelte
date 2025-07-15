@@ -2,29 +2,29 @@
   import Icon from '@iconify/svelte';
 </script>
 
-<div class="text-right">
-  <div class="flex flex-row items-center justify-end space-x-1 text-4xl">
+<div class="text-left">
+  <div class="flex flex-row items-center justify-start space-x-1 text-4xl">
     <Icon icon="carbon:time" />
-    <h2 class="text-right">Hours</h2>
+    <h2>Hours</h2>
   </div>
   <p class="text-lg">Mon - Fri 9 AM to 6 PM</p>
   <p class="text-lg">Closed on holidays</p>
 </div>
-<div class="text-right">
-  <div class="flex flex-row items-center justify-end space-x-1 text-4xl">
+<div>
+  <div class="flex flex-row items-center justify-start space-x-1 text-4xl">
     <Icon icon="carbon:question-answering" />
-    <h2 class="text-right">Contact Us</h2>
+    <h2>Contact Us</h2>
   </div>
   <ul class="text-xl">
-    <li class="flex flex-row items-center justify-end space-x-1">
+    <li class="flex flex-row items-center justify-start space-x-1">
       <Icon icon="carbon:location" />
       <p>Winchester, VA</p>
     </li>
-    <li class="flex flex-row items-center justify-end space-x-1">
+    <li class="flex flex-row items-center justify-start space-x-1">
       <Icon icon="carbon:email" />
       <a href="mailto:dandzmotorsports@gmail.com">dandzmotorsports@gmail.com</a>
     </li>
-    <li class="flex flex-row items-center justify-end space-x-1">
+    <li class="flex flex-row items-center justify-start space-x-1">
       <Icon icon="carbon:phone" />
       <a href="tel:+15403154562">(540) 315-4562</a>
     </li>
