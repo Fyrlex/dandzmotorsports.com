@@ -27,16 +27,10 @@
     <p class="text-xl font-semibold text-red-400">Services</p>
     <ul>
       <li>
-        <a href="/changelog" class="duration-100 hover:text-red-400">Changelog</a>
+        <a href="/services#steering" class="duration-100 hover:text-red-400">Steering</a>
       </li>
       <li>
-        <a href="/dashboard" class="duration-100 hover:text-red-400">Dashboard</a>
-      </li>
-      <li>
-        <a href="/docs" class="duration-100 hover:text-red-400">Documentation</a>
-      </li>
-      <li>
-        <a href="/premium" class="duration-100 hover:text-red-400">Premium</a>
+        <a href="/services#frame" class="duration-100 hover:text-red-400">Frame</a>
       </li>
     </ul>
   </div>

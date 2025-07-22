@@ -3,5 +3,5 @@
   import Metadata from '../../lib/components/Metadata.svelte';
 </script>
 
-<Metadata title="About Us" url="/about" />
+<Metadata title="Services" url="/services" />
 <ComingSoon />

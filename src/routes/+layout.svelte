@@ -7,7 +7,7 @@
 </script>
 
 <Header />
-<main class="flex min-h-screen flex-col bg-stone-900 bg-gradient-to-br">
+<main class="flex min-h-screen flex-col bg-stone-900 bg-gradient-to-br p-10">
   {@render children()}
 </main>
 <Footer />
