@@ -27,10 +27,21 @@
     <p class="text-xl font-semibold text-red-400">Services</p>
     <ul>
       <li>
+        <a href="/services#accessories" class="duration-100 hover:text-red-400"
+          >Accessories & Modifications</a
+        >
+      </li>
+      <li>
+        <a href="/services#oil" class="duration-100 hover:text-red-400">Oil Changes</a>
+      </li>
+      <li>
         <a href="/services#steering" class="duration-100 hover:text-red-400">Steering</a>
       </li>
       <li>
-        <a href="/services#frame" class="duration-100 hover:text-red-400">Frame</a>
+        <a href="/services#brakes" class="duration-100 hover:text-red-400">Tires & Brakes</a>
+      </li>
+      <li>
+        <a href="/services#transmission" class="duration-100 hover:text-red-400">Transmission</a>
       </li>
     </ul>
   </div>

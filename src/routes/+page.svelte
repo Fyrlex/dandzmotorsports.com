@@ -2,10 +2,11 @@
   import Metadata from '../lib/components/Metadata.svelte';
   import LeftSidebar from '../lib/components/LeftSidebar.svelte';
   import Slideshow from '../lib/components/Slideshow.svelte';
+
+  import { Card } from 'flowbite-svelte';
 </script>
 
 <Metadata title="Autoshop" url="" />
-
 <div class="container mx-auto">
   <div class="my-5 grid grid-flow-row gap-10 lg:grid-flow-col">
     <div class="order-2 flex w-fit flex-col space-y-10 sm:order-1">
@@ -17,6 +18,30 @@
         In need of an auto repair or upgrade? At D & Z Motorsports, we are committed to providing a
         fast and effective environment for automobiles and their needs.
       </h2>
+      <div class="grid grid-cols-3 gap-10">
+        <Card class="p-4 sm:p-6 md:p-8" color="secondary">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Repair</h5>
+          <p class="leading-tight font-normal text-gray-300">
+            We offer a wide range of services, from basic maintenance to complex repairs. Our team
+            of experienced technicians is here to help you get back on the road quickly and safely.
+          </p>
+        </Card>
+        <Card class="p-4 sm:p-6 md:p-8" color="secondary">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Customization</h5>
+          <p class="leading-tight font-normal text-gray-300">
+            Fabrication, welding, and custom builds are our specialties. Whether you want to enhance
+            your vehicle's performance or give it a unique look, we have the expertise to bring your
+            vision to life.
+          </p>
+        </Card>
+        <Card class="p-4 sm:p-6 md:p-8" color="secondary">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Maintenance</h5>
+          <p class="leading-tight font-normal text-gray-300">
+            Regular maintenance is key to keeping your vehicle running smoothly. We offer a variety
+            of maintenance services to ensure your car stays in top condition.
+          </p>
+        </Card>
+      </div>
       <Slideshow />
     </div>
     <div class="order-3 hidden lg:flex">
