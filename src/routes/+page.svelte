@@ -18,7 +18,7 @@
         In need of an auto repair or upgrade? At D & Z Motorsports, we are committed to providing a
         fast and effective environment for automobiles and their needs.
       </h2>
-      <div class="grid grid-cols-3 gap-10">
+      <div class="grid grid-cols-1 gap-10 sm:grid-cols-3">
         <Card class="p-4 sm:p-6 md:p-8" color="secondary">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Repair</h5>
           <p class="leading-tight font-normal text-gray-300">
